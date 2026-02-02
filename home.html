@@ -1,211 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Home page of the portfolio website -->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="Css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Makes website responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>My Portfolio</title>
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="Css/style.css" />
+
+  <!-- Bootstrap CSS for layout and components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+  <!-- Flex layout used to keep footer at bottom -->
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="home.html">My Portfolio</a>
+  <!-- Header section -->
+  <header>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Photo.html">Photography</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- Website name / logo -->
+        <a class="navbar-brand" href="home.html">My Portfolio</a>
 
-    </header>
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <main class="flex-fill">
-        <section class="hero">
-            <h2>Hey there! 👋</h2>
-            <p>Aspiring Web Developer | HTML • CSS • JavaScript</p>
-        </section>
-        <section class="container my-5" id="about">
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
 
+            <!-- Active page -->
+            <li class="nav-item">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
 
-<hr class="about-line">
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
 
-        
+            <li class="nav-item">
+              <a class="nav-link" href="Photo.html">Photography</a>
+            </li>
 
-<!-- About Section -->
-<section id="about" class="about">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
 
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate UI/UX Designer and Web Developer who enjoys creating clean, responsive, and user-friendly websites.
-    </p>
-
-    <div class="row">
-      <div class="col-md-4">
-        <img src="/Photo's/me.jpeg" class="img-fluid about-img" alt="My Photo">
-
-      </div>
-
-      <div class="col-md-8">
-        <h3>UI/UX Designer & Web Developer</h3>
-
-        <p>
-          I have a strong interest in web development and enjoy learning new technologies to improve my skills.
-        </p>
-
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li><strong>Birthday:</strong> 8 Dec 2002</li>
-              <li><strong>Website:</strong> www.Jay.com</li>
-              <li><strong>Phone:</strong> +44 07397 677777</li>
-              <li><strong>City:</strong> London, UK</li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <ul>
-              <li><strong>Age:</strong> 23</li>
-              <li><strong>Degree:</strong> Master</li>
-              <li><strong>Email:</strong> jaykumar.desai@law.ac.uk</li>
-              <li><strong>Freelance:</strong> Available</li>
-            </ul>
-          </div>
+          </ul>
         </div>
 
-        <p>
-          I aim to build well-structured, accessible, and visually appealing
-          websites while continuously improving my technical knowledge.
-        </p>
       </div>
-    </div>
-  </div>
+    </nav>
 
-</section>
+  </header>
 
+  <!-- Main content area -->
+  <main class="flex-fill">
 
+    <!-- About section container -->
+    <section class="container my-5" id="about">
 
+      <!-- About Me section -->
+      <section id="about" class="about">
+        <div class="container">
 
-<hr class="about-line">
+          <!-- Section heading -->
+          <h2>About Me</h2>
 
+          <!-- Short introduction -->
+          <p>
+            I am a passionate UI/UX Designer and Web Developer who enjoys creating clean,
+            responsive, and user-friendly websites.
+          </p>
 
+          <!-- Row for image and content -->
+          <div class="row">
 
-<div class="row">
+            <!-- Profile image -->
+            <div class="col-md-4">
+              <img src="/Photo's/me.jpeg" class="img-fluid about-img" alt="My Photo">
+            </div>
 
-  <!-- Left Column -->
-  <div class="col-lg-6">
-    <h3 class="resume-title">Summary</h3>
+            <!-- About details -->
+            <div class="col-md-8">
+              <h3>UI/UX Designer & Web Developer</h3>
 
-    <div class="resume-item">
-      <h4>Jaykumar Rakesh Desai</h4>
-      <p>
-        <em>
-          Motivated Computer Science postgraduate student with a strong interest
-          in web development and UI/UX design. Passionate about building clean,
-          responsive, and user-friendly websites while continuously learning
-          modern web technologies.
-        </em>
-      </p>
-      <ul>
-        <li>London, United Kingdom</li>
-        <li>Email: jaykumar.desai@law.ac.uk</li>
-      </ul>
-    </div>
+              <p>
+                I have a strong interest in web development and enjoy learning new
+                technologies to improve my skills.
+              </p>
 
-    <h3 class="resume-title">Education</h3>
+              <!-- Personal information -->
+              <div class="row">
 
-    <div class="resume-item">
-      <h4>MSc Computer Science</h4>
-      <h5>2025 – Present</h5>
-      <p><em>University of Law, London</em></p>
-      <p>
-        Currently pursuing a Master’s degree in Computer Science with a focus on
-        web technologies, programming fundamentals, and software development.
-      </p>
-    </div>
+                <!-- Left details -->
+                <div class="col-md-6">
+                  <ul>
+                    <li><strong>Birthday:</strong> 8 Dec 2002</li>
+                    <li><strong>Website:</strong> www.Jay.com</li>
+                    <li><strong>Phone:</strong> +44 07397 677777</li>
+                    <li><strong>City:</strong> London, UK</li>
+                  </ul>
+                </div>
 
-    <div class="resume-item">
-      <h4>Bachelor of Computer Applications (BCA)</h4>
-      <h5>Completed</h5>
-      <p><em>Uka Tarsadia University</em></p>
-      <p>
-        Built strong foundational knowledge in programming, databases, and
-        software development concepts.
-      </p>
-    </div>
+                <!-- Right details -->
+                <div class="col-md-6">
+                  <ul>
+                    <li><strong>Age:</strong> 23</li>
+                    <li><strong>Degree:</strong> Master</li>
+                    <li><strong>Email:</strong> jaykumar.desai@law.ac.uk</li>
+                    <li><strong>Freelance:</strong> Available</li>
+                  </ul>
+                </div>
 
-  </div>
+              </div>
 
-  <!-- Right Column -->
-  <div class="col-lg-6">
-    <h3 class="resume-title">Projects & Experience</h3>
+              <!-- Career goal -->
+              <p>
+                I aim to build well-structured, accessible, and visually appealing
+                websites while continuously improving my technical knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="resume-item">
-      <h4>Web Development Projects</h4>
-      <h5>Academic & Personal</h5>
-      <p><em>HTML, CSS, JavaScript</em></p>
-      <ul>
-        <li>Designed and developed responsive websites and portfolio projects</li>
-        <li>Used Bootstrap to create mobile-friendly layouts</li>
-        <li>Implemented clean, well-structured HTML and CSS</li>
-        <li>Focused on usability and basic UI/UX principles</li>
-      </ul>
-    </div>
+      <!-- Divider line -->
+      <hr class="about-line">
 
-    <div class="resume-item">
-      <h4>Skills Development</h4>
-      <h5>Ongoing</h5>
-      <ul>
-        <li>Improving JavaScript and front-end development skills</li>
-        <li>Learning responsive and accessible web design</li>
-        <li>Exploring modern web development tools</li>
-      </ul>
-    </div>
+      <!-- Resume section -->
+      <div class="row">
 
-  </div>
+        <!-- Left column -->
+        <div class="col-lg-6">
 
-</div>
+          <!-- Summary section -->
+          <h3 class="resume-title">Summary</h3>
 
+          <div class="resume-item">
+            <h4>Jaykumar Rakesh Desai</h4>
+            <p>
+              <em>
+                Motivated Computer Science postgraduate student with a strong interest
+                in web development and UI/UX design.
+              </em>
+            </p>
+            <ul>
+              <li>London, United Kingdom</li>
+              <li>Email: jaykumar.desai@law.ac.uk</li>
+            </ul>
+          </div>
 
+          <!-- Education section -->
+          <h3 class="resume-title">Education</h3>
 
+          <div class="resume-item">
+            <h4>MSc Computer Science</h4>
+            <h5>2025 – Present</h5>
+            <p><em>University of Law, London</em></p>
+            <p>
+              Studying core computer science concepts with focus on web technologies
+              and software development.
+            </p>
+          </div>
 
-<hr class="about-line">
+          <div class="resume-item">
+            <h4>Bachelor of Computer Applications (BCA)</h4>
+            <h5>Completed</h5>
+            <p><em>Uka Tarsadia University</em></p>
+            <p>
+              Gained strong foundation in programming and software development.
+            </p>
+          </div>
 
+        </div>
 
+        <!-- Right column -->
+        <div class="col-lg-6">
 
+          <!-- Projects and experience -->
+          <h3 class="resume-title">Projects & Experience</h3>
 
+          <div class="resume-item">
+            <h4>Web Development Projects</h4>
+            <h5>Academic & Personal</h5>
+            <p><em>HTML, CSS, JavaScript</em></p>
+            <ul>
+              <li>Developed responsive portfolio and website projects</li>
+              <li>Used Bootstrap for mobile-friendly layouts</li>
+              <li>Focused on clean and readable code</li>
+              <li>Applied basic UI/UX design principles</li>
+            </ul>
+          </div>
 
+          <div class="resume-item">
+            <h4>Skills Development</h4>
+            <h5>Ongoing</h5>
+            <ul>
+              <li>Improving JavaScript skills</li>
+              <li>Learning responsive and accessible design</li>
+              <li>Exploring modern web tools</li>
+            </ul>
+          </div>
 
-    </main>
+        </div>
+      </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-        © 2026 My Portfolio
-    </footer>
+      <!-- Divider line -->
+      <hr class="about-line">
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    © 2026 Jaykumar Rakesh Desai | All Rights Reserved
+
+  </footer>
+
+  <!-- Custom JavaScript file -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

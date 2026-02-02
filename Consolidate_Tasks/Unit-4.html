@@ -1,77 +1,187 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+<!-- Projects Page - Unit 4 -->
 
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Page title -->
     <title>Projects</title>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <!-- flex layout keeps footer at bottom -->
 
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
+
+            <!-- Website name -->
             <a class="navbar-brand" href="../home.html">My Portfolio</a>
 
+            <!-- Mobile toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="../Photo.html">Photography</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Photo.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-   <main class="flex-fill">
+    <!-- Main content -->
+    <main class="flex-fill">
+
+        <!-- Page container -->
         <div class="container my-5">
+
+            <!-- Unit information card -->
             <div class="card-body">
                 <ul class="list-group list-group-flush my-4">
-                
+
                     <li class="list-group-item"></li>
-    <h5 class="card-title">Unit - 4</h5>
-    <p class="card-text">Unit 4 Consolidate - Task 1: Web Server Configuration</p>
 
-    <div class="d-flex justify-content-between mt-auto">
-        <a href="Unit-3.html" class="btn btn-outline-secondary">
-            Unit 3
-        </a>
-    <div class="text-end">
-        <a href="Unit-5.html" class="btn btn-primary">
-            Next Unit – 5
-        </a>
-    </div>
-</div>
-        <li class="list-group-item"></li>
-        <li class="list-group-item"></li>
-        </ul>
+                    <!-- Unit title and task description -->
+                    <h5 class="card-title">Unit - 4</h5>
+                    <p class="card-text">
+                        Unit 4 Consolidate - Task 1: Web Server Configuration
+                    </p>
 
+                    <!-- Navigation buttons for previous and next unit -->
+                    <div class="d-flex justify-content-between mt-auto">
+                        <a href="Unit-3.html" class="btn btn-outline-secondary">Unit 3</a>
+                        <div class="text-end">
+                            <a href="Unit-5.html" class="btn btn-primary">Next Unit – 5</a>
+                        </div>
+                    </div>
 
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item"></li>
 
+                </ul>
+            </div>
 
+            <!-- Web Server Info Section -->
+            <h1>Introduction to WAMP and LAMP</h1>
+            <hr class="about-line">
 
-</main>
+            <!-- WAMP Section -->
+            <h2>1. Introduction to WAMP</h2>
+            <p>
+                WAMP stands for:
+            <ul>
+                <li><strong>W</strong> – Windows Operating System</li>
+                <li><strong>A</strong> – Apache Web Server</li>
+                <li><strong>M</strong> – MySQL Database</li>
+                <li><strong>P</strong> – PHP</li>
+            </ul>
+            WAMP is a local server environment used to develop and test web applications on a Windows computer.
+            Apache serves the HTML/PHP pages, MySQL stores data, and PHP handles dynamic content.
+            </p>
+            <hr class="about-line">
 
+            <!-- LAMP Section -->
+            <h2>2. Introduction to LAMP</h2>
+            <p>
+                LAMP stands for:
+            <ul>
+                <li><strong>L</strong> – Linux Operating System</li>
+                <li><strong>A</strong> – Apache Web Server</li>
+                <li><strong>M</strong> – MySQL Database</li>
+                <li><strong>P</strong> – PHP</li>
+            </ul>
+            LAMP is similar to WAMP but runs on Linux systems. It is widely used for hosting live websites.
+            </p>
+            <hr class="about-line">
+
+            <!-- Benefits Section -->
+            <h2>3. Benefits of WAMP/LAMP</h2>
+            <ul>
+                <li>Local Development: Test websites locally before going live.</li>
+                <li>Dynamic Content Support: Run PHP scripts and use MySQL databases.</li>
+                <li>Easy Installation: Bundles Apache, MySQL, and PHP.</li>
+                <li>Cost-Effective: Free and open-source.</li>
+                <li>Cross-Platform Options: WAMP for Windows, LAMP for Linux.</li>
+                <li>Safe Testing Environment: No risk to live servers.</li>
+            </ul>
+            <hr class="about-line">
+
+            <!-- Hello World HTML Example -->
+            <h2>4. Create a Simple "Hello World" Webpage</h2>
+            <p>Steps to create a static HTML page:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Hello World Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my first webpage using WAMP or LAMP.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <p>Save as <strong>index.html</strong> in WAMP <strong>www</strong> folder and access via:
+                <code>http://localhost/mywebsite/index.html</code></p>
+            <hr class="about-line">
+
+            <!-- PHP Hello World Example -->
+            <h2>5. PHP "Hello World" Example</h2>
+            <p>Steps to create a dynamic PHP page:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;PHP Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;
+        &lt;?php
+            echo "Hello World using PHP!";
+        ?&gt;
+    &lt;/h1&gt;
+    &lt;p&gt;Welcome to my first dynamic webpage using WAMP or LAMP.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <p>Save as <strong>index.php</strong> and access via: <code>http://localhost/mywebsite/index.php</code></p>
+            <hr class="about-line">
+
+            <!-- Summary Section -->
+            <h2>Summary</h2>
+            <p>
+                WAMP is ideal for Windows local development, LAMP for Linux servers. Both allow testing static HTML and
+                dynamic PHP pages. Benefits include safe testing, cost-effectiveness, dynamic content support, and easy
+                installation. Creating a simple "Hello World" page demonstrates basic HTML and PHP usage.
+            </p>
+            <hr class="about-line">
+
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">
-        © 2026 My Portfolio
+        © 2026 Jaykumar Rakesh Desai | All Rights Reserved
     </footer>
 
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

@@ -127,3 +127,403 @@ footer {
   border-top: 2px solid #000; /* solid line */
   margin: 40px 0;
 }
+
+
+
+/* --------------------------------------------------------------
+   Portfolio Section Styling
+   -------------------------------------------------------------- */
+
+/* Filter buttons (not used now, but kept for future) */
+.portfolio .portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/* Masonry layout */
+#portfolio-container {
+    column-count: 3;
+    column-gap: 15px;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+    #portfolio-container {
+        column-count: 2;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+    #portfolio-container {
+        column-count: 1;
+    }
+}
+
+/* Each image card */
+.portfolio-item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Images */
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;/* --------------------------------------------------------------
+   Global Reset and Typography
+   -------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+body {
+  line-height: 1.6; /* Spacing between lines */
+}
+
+/* --------------------------------------------------------------
+   Header and Navigation Styling
+   -------------------------------------------------------------- */
+header {
+  background: #222; /* Dark background for header */
+  color: #fff;      /* White text */
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Push brand left, links right */
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Navbar links list */
+.nav-links {
+  list-style: none;
+  display: flex; /* Horizontal layout */
+  gap: 1rem;     /* Space between links */
+}
+
+.nav-links a {
+  color: white; /* Link color */
+  text-decoration: none;
+}
+
+/* Mobile menu button */
+.menu-btn {
+  display: none; /* Hidden by default, shown in mobile view */
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+}
+
+/* --------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------- */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem; /* Space around content */
+  background: #f4f4f4; /* Light gray background */
+}
+
+/* --------------------------------------------------------------
+   Generic Section Styling
+   -------------------------------------------------------------- */
+.section {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* --------------------------------------------------------------
+   Project Grid (Portfolio)
+   -------------------------------------------------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between grid items */
+}
+
+/* Individual cards in grid */
+.card {
+  border: 1px solid #ddd; /* Light border */
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.card img {
+  max-width: 100%;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift */
+}
+
+/* --------------------------------------------------------------
+   Forms
+   -------------------------------------------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea, button {
+  padding: 0.7rem;
+}
+
+button {
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+
+/* --------------------------------------------------------------
+   Responsive Design for Navigation
+   -------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column;
+    background: #222;
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: block; /* Show hamburger button */
+  }
+}
+
+/* --------------------------------------------------------------
+   About Section Image
+   -------------------------------------------------------------- */
+.about-img {
+  width: 180px;      /* Set width of image */
+  height: auto;
+  border-radius: 50%; /* Make image circular */
+}
+
+/* Horizontal line for section separation */
+.about-line {
+  border: none;
+  border-top: 2px solid #000;
+  margin: 40px 0;
+}
+
+/* --------------------------------------------------------------
+   Portfolio Section Styling
+   -------------------------------------------------------------- */
+
+/* Filter buttons (optional for future use) */
+.portfolio .portfolio-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/* Masonry layout for portfolio */
+#portfolio-container {
+    column-count: 3; /* 3 columns on desktop */
+    column-gap: 15px; /* Space between columns */
+}
+
+/* Tablet view adjustments */
+@media (max-width: 992px) {
+    #portfolio-container {
+        column-count: 2; /* 2 columns on tablet */
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 576px) {
+    #portfolio-container {
+        column-count: 1; /* 1 column on mobile */
+    }
+}
+
+/* Portfolio item card */
+.portfolio-item {
+    break-inside: avoid; /* Prevent item from breaking across columns */
+    margin-bottom: 15px;
+    position: relative;  /* For overlay positioning */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Portfolio images */
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Zoom effect on hover */
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay info container */
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: white;
+    padding: 15px;
+    opacity: 0; /* Hidden by default */
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Show overlay on hover */
+.portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+/* Overlay text styling */
+.portfolio-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.portfolio-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Zoom icon on portfolio */
+.preview-link {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: white;
+}
+
+/* Hover effect for zoom icon */
+.preview-link:hover {
+    color: #ffdd00; /* Gold color on hover */
+}
+
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Text overlay */
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Show overlay on hover */
+.portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+/* Overlay text */
+.portfolio-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.portfolio-info p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Zoom icon */
+.preview-link {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: white;
+}
+
+/* Hover effect on zoom icon */
+.preview-link:hover {
+    color: #ffdd00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
